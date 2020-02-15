@@ -24,7 +24,9 @@ Date,Remote IP,Local IP,Method,URI,URI Path,URI Query,Status Code,Payload
 ```
 python3 wowhoneypot_csv_write.py <wowhoneypotのaccess_log> <出力するcsvファイルのパスおよびファイル名>
 ```
+
 例：
+
 ```
 python3 wowhoneypot_csv_write.py /home/ubuntu/wowhoneypot/log/access_log /home/ubuntu/wowhoneypot/log/wowhoneypot_report.csv
 ```
@@ -40,8 +42,8 @@ uri_path.csv に記載されている正規表現を元に検知したURIパス�
 ```
 python3 wowhoneypot_slack.py  <wowhoneypot_csv_write.pyで出力したファイル> <wowhoneypot or wowhoneypotssl>
 ```
-例：  
-WOWHoneypot(HTTP)に関する出力を行う場合
+
+例：  WOWHoneypot(HTTP)に関する出力を行う場合
 ```
 python3 wowhoneypot_csv_write.py /home/ubuntu/wowhoneypot/log/wowhoneypot_report.csv wowhoenypot
 ```
@@ -59,6 +61,7 @@ Date,Malware URL,Local Port,Remote IP,URI Path,Decode Payload
 ```
 python3 honeytrap_csv_write.py <honeytrapのattackers.json> <出力するcsvファイルのパスおよびファイル名>
 ```
+
 例：
 ```
 python3 honeytrap_csv_write.py /home/ubuntu/honeytrap/log/attackers.json /home/ubuntu/honeytrap/log/honeytrap_report.csv
@@ -73,6 +76,7 @@ uri_path.csv に記載されている正規表現を元に検知したURIパス�
 ```
 python3 honeytrap_slack.py <honeytrap_csv_write.pyで出力したファイル> 
 ```
+
 例：
 ```
 python3 honeytrap_slack.py /home/ubuntu/honeytrap/log/honeytrap_report.csv
@@ -94,6 +98,7 @@ Malware_SHA256
 ```
 python3 honeytrap_malware_check.py <honeytrapのattackers.json>
 ```
+
 例：
 ```
 python3 honeytrap_malware_check.py /user/ubuntu/honeytrap/log/attackers.json
@@ -115,6 +120,7 @@ python3 honeytrap_virustotal.py
 ```
 ## 初期設定
 ### 1.本ツールのダウンロード
+
 例：ツールをダウンロードするフォルダへ移動後に以下を実行
 ```
 git clone https://github.com/sec-chick/Workerbee.git
@@ -149,24 +155,28 @@ uri_path_list_csv='/home/ubuntu/Workerbee/uri_path.csv'
 Honeytrapのマルウェア調査結果を記載するcsvファイルの場所を記載してください。
 本githubのフォルダに雛形が含まれていますので、必要に応じて適切なフォルダへ移動してください。  
 なお、マルウェア分析を行わない場合、記載は不要です。
+
 例：
 ```
 uri_path_list_csv='/user/ubuntu/Workerbee/uri_path.csv'
 ```
 #### malware_result_file
 マルウェアを保存するフォルダを記載して下さい。
+
 例：
 ```
 malware_path='/home/ubuntu/malware/'
 ```
 #### SLACK_API_TOKEN
 SLACKのAPIキー(OAuth Access Token)を記載して下さい。
+
 例：
 ```
 SLACK_API_TOKEN='xxxx-111111111111-111111111111-a1aAaaaAAaA11aAaa1aA1aAA'
 ```
 #### vt_apikey 
 VirusTotalのAPIキーを記載してください。
+
 例：
 ```
 vt_apikey = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' # apikey(VT)
@@ -174,6 +184,7 @@ vt_apikey = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' # apikey(VT)
 #### error_file
 pythonツールのエラーを記載するcsvファイルを作成してください。
 作成後にファイルのパスを記載してください。
+
 例：
 ```
 error_file='/home/ubuntu/error_file.csv'
@@ -186,6 +197,7 @@ slack_channel_new_malware: 新規マルウェア通知用チャンネル
 slack_channel_honeytrap: Honeytrapの分析情報通知用チャンネル  
 slack_channel_wowhoneypot: WOWHoneypot(HTTP)の分析情報通知用チャンネル  
 slack_channel_wowhoneypotssl：WOWHoneypot(HTTPS)の分析情報通知用チャンネル  
+
 例：
 ```
 slack_channel_new_malware='#new_malware'
@@ -195,6 +207,7 @@ slack_channel_wowhoneypotssl='#wowhoneypotssl'
 ```
 #### slack_flag
 slackでの情報連携を行うか決めるフラグとなります。必要な場合はONに設定し、不必要な場合はNOに設定してください。
+
 例：
 ```
 slack_flag='ON' 
