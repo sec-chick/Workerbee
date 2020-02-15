@@ -16,7 +16,7 @@ python:Python 3.6.9
 ## ツール機能および利用方法
 ### wowhoneypot_csv_write.py
 #### 機能
-WOWHoneypotのログをcsvにエクスポートするツールとなります。  　
+WOWHoneypotのログをcsvにエクスポートするツールとなります。    　
 本ツールでは以下の項目を取得することが可能です。  
 Date,Remote IP,Local IP,Method,URI,URI Path,URI Query,Status Code,Payload  
 #### 利用方法
