@@ -41,6 +41,12 @@ except IndexError as e:
 def main():
     print('Honeytrap Analysis Start')
     log_count=0
+    #header write
+    header=['Date','Malware URL','Local Port','Remote IP','URI Path','Decode Payload'] # header
+    with open(honeytrap_payload , 'a') as f:
+            writer=csv.writer(f)
+            writer.writerow(header)
+
     with open(honeytrap_logfile) as lines:
         for line in lines:
             log_count=log_count+1
@@ -101,10 +107,8 @@ def func_read_payload(temp, pattern):
 
 def func_csv_write(temp, malware_url, data_hex, http_path):
     csv_data=[temp['start_time'], malware_url,temp['attack_connection']['local_port'], temp['attack_connection']['remote_ip'],http_path,data_hex]
-    header=['Date','Malware URL','Local Port','Remote IP','URI Path','Decode Payload'] # header
     with open(honeytrap_payload , 'a') as f:
             writer=csv.writer(f)
-            writer.writerow(header)
             writer.writerow(csv_data)
 
 if __name__ == "__main__":
