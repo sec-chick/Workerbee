@@ -226,3 +226,9 @@ uri_path.csv に記載された１列目に正規表現を記載します。正�
 ```
 result = re.match(uri_path.csvの1行目,評価対象のURL,re.IGNORECASE)
 ```
+
+##　参考
+### python3.5系から3.6系のバージョンアップ
+https://qiita.com/nettle0010/items/cc15376992c73c45f849
+### slackモジュールのエラー
+https://github.com/slackapi/python-slackclient/issues/183
