@@ -159,6 +159,7 @@ def func_csv_read(file_name):
     uri_path_data=[]
     with open(honeytrap_payload) as f:
         reader = csv.reader(f)
+        header = next(reader)
         for row in reader:
              local_port_data.append(row[2])
              remote_ip_data.append(row[3])
@@ -175,6 +176,7 @@ def func_uri_path_read(file_name):
     cve_list=[]
     with open(file_name) as f:
         reader = csv.reader(f)
+        header = next(reader)
         for row in reader:
             uri_path_decode=row[0]
             uri_path_list.append(uri_path_decode)
