@@ -1,33 +1,32 @@
-wow_path_research,target,CVE,reference,Date
-/admin/assets/js/views/login\.js,FreePBX,-,https://git.freepbx.org/projects/FREEPBX/repos/framework/browse/amp_conf/htdocs/admin/assets/js/views/login.js?at=bfb36fa7ac70c2e642257dbcd99a1799e19ea743,2020/1/18
-/recordings/theme/main\.css,FreePBX,-,https://github.com/crazedr0m/FreePBX/blob/master/upgrades/2.8.1.md5,2020/1/18
-.*/Util/PHP/eval-stdin.*,PHPUnit,CVE-2017-9841,https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005280.html,2020/1/18
-ip\.ws\.126\.net:443,Unauthorized Relay,-,-,2020/1/18
-/TP/public/index\.php,ThinkPHP,-,https://www.exploit-db.com/exploits/46150,2020/1/18
-/card_scan_decoder\.php,Linear eMerge E3-Series,CVE-2019-7256,https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-7256
-/manager/html,Tomcat,-,-,2020/1/18
-/shell ,wegshell,-,-,2020/1/18
-/vpn/\.\./vpns/,Citrix ADC/Citrix Gateway,CVE-2019-19781,https://github.com/mpgn/CVE-2019-19781
-/rest/v1/AccountService/Accounts,HPE iLO 4,,https://www.linux.org/threads/authentication-bypass-on-hpe-ilo-4-older-versions.18814/,2020/1/23
-\.env ,env,-,-,2020/1/18
-\.txt,text,-,-,2020/1/18
-/admin/config\.php,PHP,-,-,2020/1/18
-/solr/admin/info/system,Apache Solr,-,https://qiita.com/ma2saka/items/d13787b0582b4116b0b5,2020/2/9
-/index\.php,index file,-,-,2020/2/9
-^/\.,Hidden files,-,-,2020/2/9
-^http://.*,Unauthorized relay,-,-,2020/2/9
-^www\.,Unauthorized relay,-,-,2020/2/10
-^cn\.bing\.com\:,Unauthorized relay,-,-,2020/2/10
-/picsdesc\.xml,Realtek SDK,CVE-2014-8361,https://www.paloaltonetworks.jp/company/in-the-news/2018/unit42-finds-new-mirai-gafgyt-iotlinux-botnet-campaign,2020/2/10
-/picdesc\.xml,Realtek SDK,CVE-2014-8361,https://www.paloaltonetworks.jp/company/in-the-news/2018/unit42-finds-new-mirai-gafgyt-iotlinux-botnet-campaign,2020/2/10
-/FxCodeShell\.jsp,Webshell,-,https://blog.csdn.net/q1009020096/article/details/88392176,2020/2/10
-/?login\.cgi,D-Link Router,-,https://www.exploit-db.com/exploits/44760/,2020/2/10
-^sip,Session Initiation Protocol,-,-,2020/2/10
-.*/proc,proc directory,-,-,2020/2/10
-/lookingfor4,nmap,-,-,2020/2/10
-/404pagefinder,nmap,-,-,2020/2/10
-/hopefullya404page,nmap,-,-,2020/2/10
-/wanipcn\.xml,Realtek SDK,-,https://www.exploit-db.com/exploits/37169,2020/2/10
-/admin/i18n/readme\.txt,Unknown,-,2020/2/10
-/nasapi,Buffalo TS5600D1206,CVE-2018–13322,https://blog.securityevaluators.com/buffalo-terastation-ts5600d1206-nas-cve-disclosure-ab5d159f036d,2020/2/10
-/HNAP1,Linksys Router,D-Link Router,CVE-2017-3193,https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001662.html,2020/2/10
+uri_path,target,CVE,Date
+/admin/assets/js/views/login\.js,FreePBX,-,2020/1/18
+.*/Util/PHP/eval-stdin.*,PHPUnit,CVE-2017-9841,2020/1/18
+ip\.ws\.126\.net:443,Unauthorized Relay,-,2020/1/18
+/TP/public/index\.php,ThinkPHP,-,2020/1/18
+/card_scan_decoder\.php,Linear eMerge E3-Series,CVE-2019-7256,2020/1/18
+/manager/html,Tomcat,-,2020/1/18
+/shell ,wegshell,-,2020/1/18
+/vpn/\.\./vpns/,Citrix ADC/Citrix Gateway,CVE-2019-19781,2020/1/18
+/rest/v1/AccountService/Accounts,HPE iLO 4,-,2020/1/23
+\.env ,env,-,2020/1/18
+\.txt,text,-,2020/1/18
+/admin/config\.php,PHP,-,2020/1/18
+/solr/admin/info/system,Apache Solr,-,2020/2/9
+/index\.php,index file,-,2020/2/9
+^/\.,Hidden files,-,2020/2/9
+^http://.*,Unauthorized relay,-,2020/2/9
+^www\.,Unauthorized relay,-,2020/2/10
+^cn\.bing\.com\:,Unauthorized relay,-,2020/2/10
+/picsdesc\.xml,Realtek SDK,CVE-2014-8361,2020/2/10
+/picdesc\.xml,Realtek SDK,CVE-2014-8361,2020/2/10
+/FxCodeShell\.jsp,Webshell,-,2020/2/10
+/?login\.cgi,D-Link Router,-,2020/2/10
+^sip,Session Initiation Protocol,-,2020/2/10
+.*/proc,proc directory,-,2020/2/10
+/lookingfor4,nmap,-,2020/2/10
+/404pagefinder,nmap,-,2020/2/10
+/hopefullya404page,nmap,-,2020/2/10
+/wanipcn\.xml,Realtek SDK,-,2020/2/10
+/admin/i18n/readme\.txt,Unknown,2020/2/10
+/nasapi,Buffalo TS5600D1206,CVE-2018–13322,2020/2/10
+/HNAP1,Linksys Router,D-Link Router,CVE-2017-3193,2020/2/10

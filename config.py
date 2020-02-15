@@ -9,8 +9,11 @@ malware_path=''
 
 #API KEY
 SLACK_API_TOKEN=''
-error_file=''
 vt_apikey = '' # apikey(VT)
+
+# Error File
+error_file=''
+
 
 #slack channel
 slack_channel_new_malware='#'

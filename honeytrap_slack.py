@@ -49,7 +49,9 @@ def main():
     print(uri_path)
     print('NEW Path')
     print(uri_new)
-    slack_message='<Honeytrap>' + '\r\n'+ '\r\n' +  'Local Port Top 10' + '\r\n' + '\r\n' + local_port + 'Remote IP Top 10' +  '\r\n'+ '\r\n' + remote_ip + 'Malware' + '\r\n' + '\r\n' + malware
+    slack_message='<Honeytrap>' + '\r\n'+ '\r\n' +  'Local Port Top 10' + '\r\n' + local_port + '\r\n'  + '\r\n' + \
+        'Remote IP Top 10' + '\r\n' + remote_ip +  '\r\n' +  '\r\n' + 'Malware' +  '\r\n' + malware + '\r\n' + '\r\n' + \
+        'URI Path'  + '\r\n' + uri_path + '\r\n' + '\r\n' + 'NEW Path' + '\r\n'  + uri_new 
     if(slack_flag=='ON'):
         func_slack_send(slack_message,slack_channel_honeytrap)
 
@@ -69,14 +71,13 @@ def func_sort_count(data,item, sort_count):
     sorted_list = sorted(count.items(), key=lambda x: x[1], reverse=True)
     result = re.match("URI",item,re.IGNORECASE)
     count_data= item  + ',Count' + '\r\n'
-    #uri_path_list,target_list,cve_list,reference_list=func_uri_path_read(uri_path_list_csv)
     #全て表示させる場合に実行
     if (sort_count == 'all'):
         # URIをソートする場合に実行
         if result != None:
-            uri_path_list,target_list,cve_list,reference_list=func_uri_path_read(uri_path_list_csv)
+            uri_path_list,target_list,cve_list =func_uri_path_read(uri_path_list_csv)
             for i in sorted_list:
-                uri, uri_new =func_uri_check(i[0],uri_path_list,target_list,cve_list,reference_list, uri_new)
+                uri, uri_new =func_uri_check(i[0],uri_path_list,target_list,cve_list, uri_new)
                 uri =func_sanitize(uri)
                 count_data=count_data+uri+','+str(i[1]) + ' 件' +'\r\n'
 
@@ -93,9 +94,9 @@ def func_sort_count(data,item, sort_count):
     else:
         j=1
         if result != None:
-            uri_path_list,target_list,cve_list,reference_list=func_uri_path_read(uri_path_list_csv)
+            uri_path_list,target_list,cve_list =func_uri_path_read(uri_path_list_csv)
             for i in sorted_list:
-                uri, uri_new =func_uri_check(i[0],uri_path_list,target_list,cve_list,reference_list, uri_new)
+                uri, uri_new =func_uri_check(i[0],uri_path_list,target_list,cve_list, uri_new)
                 uri =func_sanitize(uri)
                 #uri_new =func_sanitize(uri_new)
                 count_data=count_data+uri+','+str(i[1]) + ' 件' +'\r\n'
@@ -121,7 +122,7 @@ def func_sanitize(sanitize_data):
 
     return sanitize_data
 
-def func_uri_check(uri,uri_path_list,target_list,cve_list,reference_list,new_data):
+def func_uri_check(uri,uri_path_list,target_list,cve_list,new_data):
     #uri表示用
     flag=0
     for i in range(len(uri_path_list)):
@@ -133,6 +134,12 @@ def func_uri_check(uri,uri_path_list,target_list,cve_list,reference_list,new_dat
     if (uri == '/'):
         re_uri=uri + ',Target:' + '-'
         flag=1
+
+    if (uri == 'No uri path'):
+        re_uri=uri + ',Target:' + 'No uri path'
+        flag=1
+    
+
 
     if (flag==0):
         re_uri=uri + ',Target: new'
@@ -166,7 +173,6 @@ def func_uri_path_read(file_name):
     uri_path_list=[]
     target_list=[]
     cve_list=[]
-    reference_list=[]
     with open(file_name) as f:
         reader = csv.reader(f)
         for row in reader:
@@ -174,9 +180,8 @@ def func_uri_path_read(file_name):
             uri_path_list.append(uri_path_decode)
             target_list.append(row[1])
             cve_list.append(row[2])
-            reference_list.append(row[3])
 
-    return uri_path_list,target_list,cve_list,reference_list
+    return uri_path_list,target_list,cve_list
 
 if __name__ == "__main__":
     main()
