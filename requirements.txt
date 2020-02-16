@@ -5,7 +5,7 @@ attrs==19.3.0
 certifi==2018.1.18
 chardet==3.0.4
 command-not-found==0.3
-cryptography==2.1.4
+cryptography==2.3
 distro-info===0.18ubuntu0.18.04.1
 idna==2.8
 idna-ssl==1.1.0
