@@ -19,7 +19,7 @@ pygobject==3.26.1
 python-apt==1.6.4
 pyxdg==0.25
 PyYAML==3.12
-requests==2.18.4
+requests==2.20.0
 SecretStorage==2.3.1
 six==1.11.0
 slack==0.0.2
