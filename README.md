@@ -9,7 +9,8 @@
 1. VTおよびSlackのAPIキーを取得  
 2. Slackのチャンネルを設定  
 3. cofing.pyのファイルパスを埋める  
-※error_fileは含まれていないの、自分で作成  
+※error_fileは含まれていないので、自分で作成(touch コマンドでからのファイルを作成を行う)  
+4. WOWHoneypotの分析およびslack連携しない場合、config.pyのerror_fileのフォルダパスを入力するだけで運用可能  
 
 ## 概要
 本ツールはハニーポットの簡易分析を目的としたツールとなっています。  
