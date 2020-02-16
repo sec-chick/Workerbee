@@ -1,11 +1,11 @@
 uri_path,target,CVE,Date
+.*phpMyAdmin.*,phpMyAdmin,-,2020/2/15
 /admin/assets/js/views/login\.js,FreePBX,-,2020/1/18
 .*/Util/PHP/eval-stdin.*,PHPUnit,CVE-2017-9841,2020/1/18
 ip\.ws\.126\.net:443,Unauthorized Relay,-,2020/1/18
 /TP/public/index\.php,ThinkPHP,-,2020/1/18
 /card_scan_decoder\.php,Linear eMerge E3-Series,CVE-2019-7256,2020/1/18
 /manager/html,Tomcat,-,2020/1/18
-/shell ,wegshell,-,2020/1/18
 /vpn/\.\./vpns/,Citrix ADC/Citrix Gateway,CVE-2019-19781,2020/1/18
 /rest/v1/AccountService/Accounts,HPE iLO 4,-,2020/1/23
 \.env ,env,-,2020/1/18
@@ -29,4 +29,51 @@ ip\.ws\.126\.net:443,Unauthorized Relay,-,2020/1/18
 /wanipcn\.xml,Realtek SDK,-,2020/2/10
 /admin/i18n/readme\.txt,Unknown,2020/2/10
 /nasapi,Buffalo TS5600D1206,CVE-2018–13322,2020/2/10
+/favicon\.ico,favicon,-,2020/2/15
+/robots\.txt,robots.txt,-,2020/2/15
+/VSServices,VisualStudio,-,2020/2/15
+.*XDEBUG\_SESSION\_START.*,Xdebug,-,2020/2/15
+/sitemap\.xml,XML sitemap,-,2020/2/15
+.*pma.*,phpMyAdmin,-,2020/2/15
+/w00tw00t\.at\.blackhats\.romanian\.anti-sec\:\),ZmEu,-,2020/2/15
+.*phpMy.*,phpMyAdmin,-,2020/2/15
 /HNAP1,Linksys Router,D-Link Router,CVE-2017-3193,2020/2/10
+\/web\/,web page,-,2020/2/15
+/httpdocs,File Upload,-,2020/2/15
+/php\-my,phpMyAdmin,-,2020/2/15
+/roundcube/,Roundcube,-,2020/2/15
+\/p\/m\/a\/,phpMyAdmin,-,2020/2/15
+/admm/,Administrator,-,2020/2/15
+/admn/,Administrator,-,2020/2/15
+/dbadm/,Database,-,2020/2/16
+/dbweb/,Database,-,2020/2/16
+/nice,-,-,2020/2/15
+/ws/v1/cluster/apps/new-application,Hadoop YARN ResourceManager,-,2020/2/15
+/shell,MVPower DVR,-,2020/2/15
+/wls-wsat/CoordinatorPortType11,Weblogic,CVE-2017-10271,2020/2/16
+/api,api,-,2020/2/15
+/login,Login Page,-,2020/2/15
+/jars,Unknown,-,2020/2/15
+/service/extdirect,Sonatype Nexus Repository Manager,CVE-2019-7238,2020/2/15
+/jmx,JMX,-,2020/2/15
+/_search,Elasticsearch,-,2020/2/16
+/save\_rg\_conf\.cgi,Sagemcom Modem,-,2020/2/15
+/editBlackAndWhiteList,DVR/NVR/IPC API,-,2020/2/15
+/v1\.16/version,-,-,2020/2/15
+/version,-,2020/2/15
+/users,-,-,2020/2/15
+/solr/,Apache Solr,-,2020/2/15
+/status,-,2020/2/15
+/phpm/,php,-,2020/2/16
+/phpdb/,Database,-,2020/2/16
+/webdb/,Database,-,2020/2/16
+/dbweb/,Database,-,2020/2/16
+.*mysql.*,MySQL,-,2020/2/15
+.*sqladmin.*,SQLAdmin,-,2020/2/15
+.*die\(\@md5\(,Webshell,-,2020/2/15
+/cdn-cgi/trace,Cloudflare,-,2020/2/15
+/shell\?cd\+,MVPower DVR,-,2020/2/15
+.*sql.*,SQL,-,2020/2/15
+.*database.*,Database,-,2020/2/15
+.*admin.*,Administrator,-,2020/2/15
+/php/,php,-,2020/2/15
