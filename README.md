@@ -14,7 +14,7 @@ pip3 install slackclient
 pip3 install requests
 pip3 install certifi
 ```
-エラーが発生する場合、requirements.txtからインストール
+エラーが発生する場合、requirements.txtからインストール  
 2. VTおよびSlackのAPIキーを取得  
 4. Slackのチャンネルを設定  
 4. cofing.pyのファイルパスを埋める  
