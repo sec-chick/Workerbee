@@ -8,12 +8,19 @@
 Python 3.6系での動作を確認しているため、3.6系以降へのバージョンアップを推奨します。
 
 ## ToDoリスト
-1. VTおよびSlackのAPIキーを取得  
-2. Slackのチャンネルを設定  
-3. cofing.pyのファイルパスを埋める  
+1. python3.6系以上へのアップデートおよび必要なパッケージをインストール  
+```
+pip3 install slackclient  
+pip3 install requests
+pip3 install certifi
+```
+
+2. VTおよびSlackのAPIキーを取得  
+4. Slackのチャンネルを設定  
+4. cofing.pyのファイルパスを埋める  
 ※error_fileは含まれていないので、自分で作成(touch コマンドでからのファイルを作成を行う)  
-4. WOWHoneypotの分析およびslack連携しない場合、config.pyのerror_fileのフォルダパスを入力するだけで運用可能   
-5. uri_path.csvのリストは作者がまとめたものがフォルダのuri_pathに含まれているため  
+5. WOWHoneypotの分析およびslack連携しない場合、config.pyのerror_fileのフォルダパスを入力するだけで運用可能   
+6. uri_path.csvのリストは作者がまとめたものがフォルダのuri_pathに含まれているため  
    こちらを利用することにより、ある程度の分析が可能
 
 ## 概要
@@ -98,12 +105,15 @@ python3 honeytrap_slack.py /home/ubuntu/honeytrap/log/honeytrap_report.csv
 Honeytrapのログで検知したマルウェアURLからマルウェアをダウンロードするツールとなります。  
 HoneytrapのログからマルウェアURLを抽出し、過去に検知のないマルウェアは取得するプログラムとなります。
 検知したマルウェア情報はcsvファイル(config.pyで設定)として出力されます。  
+errorが出力されることもありますが、プログラムが終了していなければ、問題なく動作しています。  
+※一部ログの出力がおかしいものがあるため、確認するために表示しているものとなっています。  
+検知したマルウェア情報はcsvファイル(config.pyで設定)として出力されます。  
 csvファイルに出力される項目は以下となります。  
 Date,Malware URL,Virus Total,Remote IP,Local Port,Status Code,Malware File Name,Regular Expression,Hash(MD5),Hash(SHA1),Hash(SHA256),Payload  
 マルウェアダウンロード時は以下の命名規則でファイル保存されます。  
-Malware_SHA256
-※マルウェアの取り扱いについては自己責任のもとで十分に注意してください。
- マルウェアの取得が不必要な場合、本ツールは必要ありません。
+Malware_SHA256  
+※マルウェアの取り扱いについては自己責任のもとで十分に注意してください。  
+ マルウェアの取得が不必要な場合、本ツールは必要ありません。  
  
 #### 利用方法
 以下のコマンドを実行
@@ -139,10 +149,13 @@ git clone https://github.com/sec-chick/Workerbee.git
 ```
 ### 2.pip3 のインストール
 ### 3.pip3でPythonのパッケージ（ライブラリ）をインストール
-requirements.txtから必要なものをインストール
 ```
-pip3 install -r requirements.txt
+pip3 install slackclient  
+pip3 install requests
+pip3 install certifi
 ```
+上記をインストールし、ツール実行時にエラーが発生する場合、必要なパッケージ（ライブラリ）をインストール  
+
 ### 4.サービスの登録
 マルウェア解析を行う場合、virustotalのAPIキーを取得し、slack連携を行う場合、slackのワ⁠ー⁠ク⁠ス⁠ペ⁠ー⁠スの作成およびAPIキーの取得を行なってください。  
 Google先生に聞いてもらえれば、登録できると思います。
@@ -153,10 +166,10 @@ slackにユーザ登録を行い、ワ⁠ー⁠ク⁠ス⁠ペ⁠ー⁠スの作
 ### 5.cofig.pyの設定
 解析に必要となる情報をcofig.pyに記載します。必要な項目は以下の通りとなります。  
 #### uri_path_list_csv
-WOWHoneypotのどの宛先を狙ったものか分析に利用する uri_path.csv が格納されるファイルの場所を記載してください。 
-※本githubのフォルダに雛形および作者が一定数分析したcsvファイルが含まれています。　　
-これらのファイルをいずれかのフォルダに格納してください。　　
-ヘッダのみ記載されている場合、全て新規のものとして扱われます。
+WOWHoneypotのどの宛先を狙ったものか分析に利用する uri_path.csv が格納されるファイルの場所を記載してください。  
+※本githubのフォルダに雛形および作者が一定数分析したcsvファイルが含まれています。  
+これらのファイルをいずれかのフォルダに格納してください。  
+ヘッダのみ記載されている場合、全て新規のものとして扱われます。  
 本ファイルに必要な正規表現を埋め込むことによって、どの宛先を狙ったものか紐づけられるようになっています。  
 
 例：
