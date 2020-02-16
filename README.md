@@ -14,7 +14,7 @@ pip3 install slackclient
 pip3 install requests
 pip3 install certifi
 ```
-エラーが発生する場合、requirements.txtからインストール  
+
 2. VTおよびSlackのAPIキーを取得  
 4. Slackのチャンネルを設定  
 4. cofing.pyのファイルパスを埋める  
@@ -155,11 +155,7 @@ pip3 install requests
 pip3 install certifi
 ```
 上記をインストールし、ツール実行時にエラーが発生する場合、必要なパッケージ（ライブラリ）をインストール  
-エラーが発生する場合、requirements.txtから必要なものをインストール  
-※ いくつかバージョンが最新でないものが含まれているため、注意
-```
-pip3 install -r requirements.txt
-```
+
 ### 4.サービスの登録
 マルウェア解析を行う場合、virustotalのAPIキーを取得し、slack連携を行う場合、slackのワ⁠ー⁠ク⁠ス⁠ペ⁠ー⁠スの作成およびAPIキーの取得を行なってください。  
 Google先生に聞いてもらえれば、登録できると思います。
