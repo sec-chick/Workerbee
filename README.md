@@ -105,6 +105,9 @@ python3 honeytrap_slack.py /home/ubuntu/honeytrap/log/honeytrap_report.csv
 Honeytrapのログで検知したマルウェアURLからマルウェアをダウンロードするツールとなります。  
 HoneytrapのログからマルウェアURLを抽出し、過去に検知のないマルウェアは取得するプログラムとなります。
 検知したマルウェア情報はcsvファイル(config.pyで設定)として出力されます。  
+errorが出力されることもありますが、プログラムが終了していなければ、問題なく動作しています。  
+※一部ログの出力がおかしいものがあるため、確認するために表示しているものとなっています。  
+検知したマルウェア情報はcsvファイル(config.pyで設定)として出力されます。  
 csvファイルに出力される項目は以下となります。  
 Date,Malware URL,Virus Total,Remote IP,Local Port,Status Code,Malware File Name,Regular Expression,Hash(MD5),Hash(SHA1),Hash(SHA256),Payload  
 マルウェアダウンロード時は以下の命名規則でファイル保存されます。  
