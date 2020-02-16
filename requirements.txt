@@ -28,5 +28,5 @@ ssh-import-id==5.7
 typing-extensions==3.7.4.1
 ufw==0.36
 unattended-upgrades==0.1
-urllib3==1.22
+urllib3==1.24.2
 yarl==1.4.2
