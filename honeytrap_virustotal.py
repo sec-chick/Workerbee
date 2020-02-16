@@ -12,6 +12,7 @@ csv_header=['Date','Malware URL','Virus Total','Remote IP','Local Port','Status 
         'Malware File Name','Regular Expression','Hash(MD5)','Hash(SHA1)','Hash(SHA256)','Payload']
 
 def main():
+    print('Honeypot VirusTotal Check Start')
     csv_data=[]
     csv_data.append(csv_header) # 先頭をヘッダファイルにする
     with open(malware_result_file) as f: # malware用ファイルオープン
@@ -21,6 +22,7 @@ def main():
             virustotal=row[2]
             if(virustotal=='NO' or virustotal== 'No Data'):
                 # VirusTotal Scan
+                print('Scan: ', row[1])
                 func_virustotal_url_scan(row[1]) # URLで調査
                 response_virustotal=func_virustotal_hash_scan(row[9]) #sha256で調査
                 if (response_virustotal['response_code'] == 1): #結果が存在する場合
@@ -33,6 +35,7 @@ def main():
             csv_data.append(row)
     
     func_csv_write(csv_data)
+    print('Honeypot VirusTotal Check End')
 
 
 def func_virustotal_hash_scan(malware_hash):
