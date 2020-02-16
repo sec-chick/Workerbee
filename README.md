@@ -8,12 +8,19 @@
 Python 3.6系での動作を確認しているため、3.6系以降へのバージョンアップを推奨します。
 
 ## ToDoリスト
-1. VTおよびSlackのAPIキーを取得  
-2. Slackのチャンネルを設定  
-3. cofing.pyのファイルパスを埋める  
+1. python3.6系以上へのアップデートおよび必要なパッケージをインストール  
+```
+pip3 install slackclient  
+pip3 install requests
+pip3 install certifi
+```
+エラーが発生する場合、requirements.txtからインストール
+2. VTおよびSlackのAPIキーを取得  
+4. Slackのチャンネルを設定  
+4. cofing.pyのファイルパスを埋める  
 ※error_fileは含まれていないので、自分で作成(touch コマンドでからのファイルを作成を行う)  
-4. WOWHoneypotの分析およびslack連携しない場合、config.pyのerror_fileのフォルダパスを入力するだけで運用可能   
-5. uri_path.csvのリストは作者がまとめたものがフォルダのuri_pathに含まれているため  
+5. WOWHoneypotの分析およびslack連携しない場合、config.pyのerror_fileのフォルダパスを入力するだけで運用可能   
+6. uri_path.csvのリストは作者がまとめたものがフォルダのuri_pathに含まれているため  
    こちらを利用することにより、ある程度の分析が可能
 
 ## 概要
@@ -139,7 +146,14 @@ git clone https://github.com/sec-chick/Workerbee.git
 ```
 ### 2.pip3 のインストール
 ### 3.pip3でPythonのパッケージ（ライブラリ）をインストール
-requirements.txtから必要なものをインストール
+```
+pip3 install slackclient  
+pip3 install requests
+pip3 install certifi
+```
+上記をインストールし、ツール実行時にエラーが発生する場合、必要なパッケージ（ライブラリ）をインストール  
+エラーが発生する場合、requirements.txtから必要なものをインストール  
+※ いくつかバージョンが最新でないものが含まれているため、注意
 ```
 pip3 install -r requirements.txt
 ```
