@@ -85,7 +85,10 @@ def func_log_read(load_file):
             http_uri=re.sub("\s$",'', http_uri)
             #http path
             path_result = repatter_path.match(http_uri)
-            http_path = path_result.group(1)
+            if path_result != None:
+                http_path = path_result.group(1)
+            else:
+                http_path = 'No Parh'
             #http query
             query_result = repatter_query.match(http_uri)
             if query_result != None:
