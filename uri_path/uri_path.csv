@@ -1,4 +1,14 @@
 uri_path,target,CVE,Date
+/owa/auth/logon\.aspx,Microsoft Exchange Server,CVE-2018-16793,2020/3/4	
+/_async/AsyncResponseService,Oracle WebLogic,CVE-2019-2725,2020/3/2
+/setup/eureka_info,Google Home Hub,-,2020/3/3
+/json_rpc,JSON-RPC,-,2020/3/3
+/recordings/theme/main\.css,FreePBX,-,2020/3/1
+/hazelcast/rest/cluster,Open-Xchange AppSuite,CVE-2013-5936,2020/3/1
+/server-info,Apache,-,2020/3/1
+/install.php,php,-,2020/3/1
+/master-status,Unknown,-,2020/3/1
+/_cat/indices,Elasticsearch,-,2020/3/1
 .*phpMyAdmin.*,phpMyAdmin,-,2020/2/15
 /admin/assets/js/views/login\.js,FreePBX,-,2020/1/18
 .*/Util/PHP/eval-stdin.*,PHPUnit,CVE-2017-9841,2020/1/18
@@ -6,13 +16,14 @@ ip\.ws\.126\.net:443,Unauthorized Relay,-,2020/1/18
 /TP/public/index\.php,ThinkPHP,-,2020/1/18
 /card_scan_decoder\.php,Linear eMerge E3-Series,CVE-2019-7256,2020/1/18
 /manager/html,Tomcat,-,2020/1/18
+/manager/text/list,Tomcat,-,2020/3/3
 /vpn/\.\./vpns/,Citrix ADC/Citrix Gateway,CVE-2019-19781,2020/1/18
 /rest/v1/AccountService/Accounts,HPE iLO 4,-,2020/1/23
 \.env ,env,-,2020/1/18
 \.txt,text,-,2020/1/18
 /admin/config\.php,PHP,-,2020/1/18
 /solr/admin/info/system,Apache Solr,-,2020/2/9
-/index\.php,index file,-,2020/2/9
+/index\.php,ThinkPHP,-,2020/2/9
 ^/\.,Hidden files,-,2020/2/9
 ^http://.*,Unauthorized relay,-,2020/2/9
 ^www\.,Unauthorized relay,-,2020/2/10
@@ -65,6 +76,7 @@ ip\.ws\.126\.net:443,Unauthorized Relay,-,2020/1/18
 /solr/,Apache Solr,-,2020/2/15
 /status,-,2020/2/15
 /phpm/,php,-,2020/2/16
+.*/wallet\.dat,Bitcoin,-,2020/3/2
 /phpdb/,Database,-,2020/2/16
 /webdb/,Database,-,2020/2/16
 /dbweb/,Database,-,2020/2/16
@@ -73,7 +85,15 @@ ip\.ws\.126\.net:443,Unauthorized Relay,-,2020/1/18
 .*die\(\@md5\(,Webshell,-,2020/2/15
 /cdn-cgi/trace,Cloudflare,-,2020/2/15
 /shell\?cd\+,MVPower DVR,-,2020/2/15
+/setup\.cgi,DGN1000 Netgear Router,-,2020/3/2
+/ctrlt/DeviceUpgrade_1,Huawei Home Device,-,2020/3/3
 .*sql.*,SQL,-,2020/2/15
 .*database.*,Database,-,2020/2/15
 .*admin.*,Administrator,-,2020/2/15
+/db/,Database,-,2020/3/1
 /php/,php,-,2020/2/15
+/hazelcast/.*,Hazelcast,-,2020/3/3
+/cgi-bin/welcome,VPN,-,2020/3/3
+/portal/redlion.Unknown,-,2020/3/2
+.*/\.env,env file.-,2020/3/4
+.*/a2billing/.*,FreePBX,-,2020/3/4
