@@ -1,4 +1,11 @@
 uri_path,target,CVE,Date
+.*index\.php,-,-,2020/4/11
+/Telerik\.Web\.UI\.WebResource\.axd*,Telerik,-,2020/4/11
+/muieblackcat,Muieblackcat(scan tool),-,2020/4/11
+/index.action,Apache Struts 2,CVE-2017-5638,2020/4/11
+/cgi-bin/mainfunction\.cgi*,DrayTek,CVE-2020-8515,2020/4/11
+/Nmap*,Nmap,-,2020/4/11
+/evox/about,Nmap,-,2020/4/11
 /owa/auth/logon\.aspx,Microsoft Exchange Server,CVE-2018-16793,2020/3/4	
 /_async/AsyncResponseService,Oracle WebLogic,CVE-2019-2725,2020/3/2
 /setup/eureka_info,Google Home Hub,-,2020/3/3
