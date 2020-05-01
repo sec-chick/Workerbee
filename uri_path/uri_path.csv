@@ -34,9 +34,9 @@ uri_path,target,CVE,Date
 /_ping,Unknown,-,2020/4/21
 /PSBlock,Supermicro IPMI,-,2020/4/21
 /apply_sec.cgi,D-Link WiFi Router,CVE-2019-16920,2020/4/21
-/v1.40/containers/json,Docker Engine API,-,2020/4/21
-/public/hydra.php,Webshell,-,-,2020/4/21
-.*/wp-content/plugins/apikey/apikey.php,Wordpress,-,-,2020/4/21
+/v1\.40/containers/json,Docker Engine API,-,2020/4/21
+/public/hydra.php,Webshell,-,2020/4/21
+.*/wp-content/plugins/apikey/apikey.php,Wordpress,-,2020/4/21
 /manager,Apache Tomcat Manager,-,2020/4/20
 rtsp\:.*,Real Time Streaming Protocol,-,2020/4/20
 /ws/v1/cluster,Apache Hadoop,-,2020/4/20
