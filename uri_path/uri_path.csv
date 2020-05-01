@@ -176,7 +176,7 @@ ip\.ws\.126\.net:443,Unauthorized Relay,-,2020/1/18
 /hudson,Unknown,-,2020/4/15
 /info,-,-,2020/4/15
 /stats,-,-,2020/4/15
-.*/\.env,env file.-,2020/3/4
+.*/\.env,env file,-,2020/3/4
 .*/a2billing/.*,FreePBX,-,2020/3/4
 /install/,AspCMS,-,2020/4/15
 /about/_notes/dwsync.xml,AspCMS,-,2020/4/15
