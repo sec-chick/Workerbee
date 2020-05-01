@@ -171,7 +171,7 @@ ip\.ws\.126\.net:443,Unauthorized Relay,-,2020/1/18
 /php/,php,-,2020/2/15
 /hazelcast/.*,Hazelcast,-,2020/3/3
 /cgi-bin/welcome,VPN,-,2020/3/3
-/portal/redlion.Unknown,-,2020/3/2
+/portal/redlion,Unknown,-,2020/3/2
 /cgi,CGI,-,2020/4/15
 /hudson,Unknown,-,2020/4/15
 /info,-,-,2020/4/15
