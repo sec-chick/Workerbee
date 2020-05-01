@@ -396,7 +396,7 @@ ip\.ws\.126\.net:443,Unauthorized Relay,-,2020/1/18
 /User/contr/lib/vssver2.scc,FoosunCMS,-,2020/4/15
 /Users/All_User.Asp,FoosunCMS,-,2020/4/15
 /Users/Mall/OrderPrint.Asp,FoosunCMS,-,2020/4/15
-/xml/products/dotnetcmsversion.xml,FoosunCMS,2020/4/15
+/xml/products/dotnetcmsversion\.xml,FoosunCMS,-,2020/4/15
 /install/testdata/hdwikitest.sql,HdWiki,-,2020/4/15
 /js/api.js,HdWiki,-,2020/4/15
 /js/editor/editor.js,HdWiki,-,2020/4/15
