@@ -42,7 +42,7 @@ rtsp\:.*,Real Time Streaming Protocol,-,2020/4/20
 /ws/v1/cluster,Apache Hadoop,-,2020/4/20
 /dns-query,DNS over HTTPS,-,020/4/20
 /struts2-core-2.3.8/login.action,Apache Struts2,-,2020/4/17
-/portal/client/cms/viewcmspage.action,CMS,2020/4/17
+/portal/client/cms/viewcmspage.action,CMS,-,2020/4/17
 /struts2_2[.]3[.]15[.]1-showcase/showcase[.]action,Apache Struts2,CVE-2017-5638,2020/4/17
 /Struts2XMLHelloWorld/User/home[.]action,Apache Struts2,-,2020/4/17
 /language/Swedish\$.*,Multiple CCTV-DVR Vendors,-,2020/4/17
