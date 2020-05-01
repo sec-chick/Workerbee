@@ -2,7 +2,7 @@ uri_path,target,CVE,Date
 /metrics,-,-,2020/4/30
 /search	,-,-,2020/4/30
 /v2/\_catalog,Docker,-,2020/4/30
-/0bef,Unknown,-,2020/4/30
+/0bef,Unknown,-,-,2020/4/30
 /web_shell_cmd\.gch,ZTE F460/F660,CVE-2014-2321,2020/4/30
 /iLPX,Unknown,-,-,2020/4/30
 /x,Unknown,-,-,2020/4/30
