@@ -115,7 +115,7 @@ ip\.ws\.126\.net:443,Unauthorized Relay,-,2020/1/18
 /404pagefinder,nmap,-,2020/2/10
 /hopefullya404page,nmap,-,2020/2/10
 /wanipcn\.xml,Realtek SDK,-,2020/2/10
-/admin/i18n/readme\.txt,Unknown,2020/2/10
+/admin/i18n/readme\.txt,Unknown,-,2020/2/10
 /nasapi,Buffalo TS5600D1206,CVE-2018–13322,2020/2/10
 /favicon\.ico,favicon,-,2020/2/15
 /robots\.txt,robots.txt,-,2020/2/15
