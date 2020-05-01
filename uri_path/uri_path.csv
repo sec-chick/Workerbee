@@ -151,7 +151,7 @@ ip\.ws\.126\.net:443,Unauthorized Relay,-,2020/1/18
 /version,-,-,2020/2/15
 /users,-,-,2020/2/15
 /solr/,Apache Solr,-,2020/2/15
-/status,-,2020/2/15
+/status,-,-,2020/2/15
 /phpm/,php,-,2020/2/16
 .*/wallet\.dat,Bitcoin,-,2020/3/2
 /phpdb/,Database,-,2020/2/16
