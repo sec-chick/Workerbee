@@ -125,7 +125,7 @@ ip\.ws\.126\.net:443,Unauthorized Relay,-,2020/1/18
 .*pma.*,phpMyAdmin,-,2020/2/15
 /w00tw00t\.at\.blackhats\.romanian\.anti-sec\:\),ZmEu,-,2020/2/15
 .*phpMy.*,phpMyAdmin,-,2020/2/15
-/HNAP1,Linksys Router,D-Link Router,CVE-2017-3193,2020/2/10
+/HNAP1,D-Link Router,CVE-2017-3193,2020/2/10
 \/web\/,web page,-,2020/2/15
 /httpdocs,File Upload,-,2020/2/15
 /php\-my,phpMyAdmin,-,2020/2/15
